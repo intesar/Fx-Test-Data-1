@@ -48,6 +48,7 @@ jobs:
     cron: '0 30 * ? * *'
   - name: Local
     environment: Local
+    issueTracker: FxLabs/Github Bot
     tags:
       - V1
     regions: FxLabs/US_WEST_1
