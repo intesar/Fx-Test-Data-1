@@ -29,6 +29,13 @@ testCases:
         "name": "",
         "description": "SD-Test example"
      }'
+     # invalid org_id
+  - id: 2
+    body: '{
+        "name": "Test-{{@Random | 6}}",
+        "description": "SD-Test example",
+        "orgId": "abc"
+     }'
 assertions:
   - "@StatusCode == 200"
   - "@Response.errors == true"
