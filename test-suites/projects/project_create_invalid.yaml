@@ -26,7 +26,7 @@ testCases:
   # invalid name
   - id: 1
     body: '{
-        "name": "test",
+        "name": "",
         "description": "SD-Test example"
      }'
      # invalid org_id
