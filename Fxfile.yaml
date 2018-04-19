@@ -44,7 +44,9 @@ jobs:
     environment: Stg
     tags:
       - V1
-    regions: FxLabs/US_WEST_1
+    regions: FxLabs/FxLabs-USWEST-1
+    notifications:
+      - FxLabs/Slack
     cron: '0 30 * ? * *'
   - name: Local
     environment: Local
